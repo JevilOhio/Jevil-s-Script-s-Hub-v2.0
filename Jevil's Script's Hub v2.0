@@ -1,0 +1,153 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()local Window = Library.CreateLib("Jevil's Script's", "BloodTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("Infiniteyield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
+Section:NewButton("NoClip GUI", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/main/NoClip%20Roblox", true))()
+    print("Clicked")
+end)
+Section:NewButton("Fly GUI", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/main/Fly%20V3", true))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Doors")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("The rooms", "ButtonInfo", function()
+-- Made By Nerd
+-- Youtube = https://www.youtube.com/@MrNeRD_x
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsroomdone.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Nerd doors v2.5~", "ButtonInfo", function()
+-- Made By Nerd
+-- Youtube = https://www.youtube.com/@MrNeRD_x
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsdone.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("PoopDoors", "ButtonInfo", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+    print("Clicked")
+end)
+Section:NewButton("Tablet/Scanner", "ButtonInfo", function()
+_G.UpdateStars = false -- stars disappear after picking up a book/breaker pole | false: a little lag
+_G.OnShop = true -- can buy on pre run shop
+_G.Price = 1000 -- tablet price on shop
+_G.Description = "" -- tablet description on shop
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+    print("Clicked")
+end)
+Section:NewButton("Custom vitamins", "ButtonInfo", function()
+getgenv().CustomVitamins = {
+    SpeedBoost = 7,
+    EffectDuration = 25
+}
+loadstring(game:HttpGet("https://pastebin.com/raw/qH9PEhfQ"))()
+    print("Clicked")
+end)
+Section:NewButton("Shears on Objects", "ButtonInfo", function()
+local Tool = game:GetObjects("rbxassetid://12685165702")[1]
+local Humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+local Sound = Instance.new("Sound")
+
+Tool.Parent = game.Players.LocalPlayer.Backpack
+
+Sound.PlaybackSpeed = 1.25
+Sound.SoundId = "rbxassetid://9118823101"
+Sound.Parent = Tool
+
+Tool.Activated:Connect(function()
+    local Use = Tool.Animations.use
+    local UseTrack = Humanoid:LoadAnimation(Use)
+
+    UseTrack:Play()
+    Sound:Play()
+    wait(0.25)
+    Sound:Play()
+    game:GetService("Players").LocalPlayer:GetMouse().Target:FindFirstAncestorOfClass("Model"):Destroy()
+end)
+
+Tool.Equipped:Connect(function()
+    local Idle = Tool.Animations.idle
+    local IdleTrack = Humanoid:LoadAnimation(Idle)
+
+    IdleTrack:Play()
+end)
+Tool.Unequipped:Connect(function()
+    for _,anim in pairs(Humanoid.Animator:GetPlayingAnimationTracks()) do
+        anim:Stop()
+    end
+end)
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Blox fruits")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("Zamex Hub", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()
+    print("Clicked")
+end)
+Section:NewButton("BLCK Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+    print("Clicked")
+end)
+Section:NewButton("Uranium Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Funky Friday")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("AutoPlay", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+    print("Clicked")
+end)
+Section:NewButton("Enable/disable FF", "ButtonInfo", function()
+--credits to thatsnotmatt#2602
+getgenv().keytoclick = "Delete"
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = keytoclick
+tool.Activated:connect(function()
+    local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, keytoclick, false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+wait(0.2)
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "thatsnotmatt#2602";
+Title = "zzz#0001";
+Duration = 10;
+});
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Tower Of Hell")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("TOH", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Build A Boat")
+local Section = Tab:NewSection("Scripts")
+Section:NewButton("BAFT", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD%20A%20BOAT%20FOR%20TREASURE.lua'))()
+    print("Clicked")
+end)
+Section:NewButton("Auto build", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Fruit Warrior")
+local Section = Tab:NewSection("Script's")
+Section:NewButton("Fruit Warrior", "ButtonInfo", function()
+_G.Key = "FREEKEY2023" -- key for now
+ 
+--- https://discord.gg/8gNrnWmgcb
+pcall(function()
+  loadstring(game:HttpGet("https://roflux.net/scripts/games/" .. tostring(game.PlaceId) .. ".lua"))()
+end)
+    print("Clicked")
+end)
